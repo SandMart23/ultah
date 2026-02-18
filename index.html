@@ -180,16 +180,20 @@
     transition: transform 0.3s, box-shadow 0.3s;
     animation: cardPop 0.7s ease both;
   }
-  .scatter-card:hover { transform: translateY(-6px) rotate(0.5deg); box-shadow: 0 20px 50px rgba(255,111,216,0.2); }
-
   @keyframes cardPop { from{opacity:0;transform:scale(0.9) translateY(20px)} to{opacity:1;transform:scale(1) translateY(0)} }
 
-  .card-main    { grid-column: 1 / 3; background: rgba(123,47,247,0.12); border-color: rgba(123,47,247,0.3); animation-delay: 0.1s; }
-  .card-cake    { grid-column: 3 / 4; display:flex; flex-direction:column; align-items:center; justify-content:center; animation-delay: 0.2s; }
-  .card-personal{ grid-column: 1 / 2; animation-delay: 0.3s; }
-  .card-wishes  { grid-column: 2 / 3; animation-delay: 0.4s; }
-  .card-closing { grid-column: 3 / 4; background: rgba(255,111,216,0.08); border-color: rgba(255,111,216,0.25); animation-delay: 0.5s; }
-  .card-balloons{ grid-column: 1 / 2; display:flex; align-items:center; justify-content:center; animation-delay: 0.6s; }
+  .card-main    { grid-column: 1 / 3; background: rgba(123,47,247,0.12); border-color: rgba(123,47,247,0.3); animation-delay: 0.1s; transform: rotate(-1.2deg); }
+  .card-main:hover { transform: rotate(0deg) translateY(-6px) !important; box-shadow: 0 20px 50px rgba(123,47,247,0.3); }
+  .card-cake    { grid-column: 3 / 4; display:flex; flex-direction:column; align-items:center; justify-content:center; animation-delay: 0.2s; transform: rotate(2.2deg); }
+  .card-cake:hover { transform: rotate(0deg) translateY(-6px) !important; }
+  .card-personal{ grid-column: 1 / 2; animation-delay: 0.3s; transform: rotate(1.5deg); }
+  .card-personal:hover { transform: rotate(0deg) translateY(-6px) !important; }
+  .card-wishes  { grid-column: 2 / 3; animation-delay: 0.4s; transform: rotate(-0.8deg); }
+  .card-wishes:hover { transform: rotate(0deg) translateY(-6px) !important; }
+  .card-closing { grid-column: 3 / 4; background: rgba(255,111,216,0.08); border-color: rgba(255,111,216,0.25); animation-delay: 0.5s; transform: rotate(1.8deg); }
+  .card-closing:hover { transform: rotate(0deg) translateY(-6px) !important; }
+  .card-balloons{ grid-column: 1 / 2; display:flex; align-items:center; justify-content:center; animation-delay: 0.6s; transform: rotate(-2deg); }
+  .card-balloons:hover { transform: rotate(0deg) translateY(-6px) !important; }
 
   .card-deco { font-size: 2em; margin-bottom: 10px; }
   .card-title-text {
@@ -803,7 +807,7 @@
         <div class="card-deco">🎂</div>
         <p class="card-title-text">Selamat Ulang Tahun</p>
         <p>Semoga di usia yang baru ini kamu diberikan <span class="hl">kesehatan, ketenangan</span>, dan banyak hal baik yang datang tanpa kamu duga. Semoga semua doa yang selama ini kamu simpan pelan-pelan menemukan jalannya.</p>
-        <p style="margin-top:12px;">Hari ini semoga jadi pengingat bahwa <span class="hl">kamu layak bahagia</span> dengan cara yang paling sederhana sekalipun. ✨</p>
+        <p style="margin-top:12px;">Hari ini semoga jadi pengingat bahwa <span class="hl">kamu layak bahagia</span> — dengan cara yang paling sederhana sekalipun. ✨</p>
       </div>
 
       <!-- CARD 2: Cake floating -->
@@ -816,7 +820,7 @@
       <div class="scatter-card card-personal">
         <div class="card-deco">💜</div>
         <p>Aku tahu kamu adalah orang yang <span class="hl">tulus dan berani jujur</span> dengan perasaanmu. Itu bukan hal yang mudah, dan nggak semua orang bisa melakukannya.</p>
-        <p style="margin-top:12px;">Tetap jadi pribadi yang <span class="hl">hangat dan apa adanya</span>, karena itu yang membuat kamu berharga. Semoga tahun ini kamu dipertemukan dengan banyak hal yang membuatmu tumbuh, bukan hanya merasa. 🌱</p>
+        <p style="margin-top:12px;">Tetap jadi pribadi yang <span class="hl">hangat dan apa adanya</span>, karena itu yang membuat kamu berharga. Semoga tahun ini kamu dipertemukan dengan banyak hal yang membuatmu <span class="hl">tumbuh</span>, bukan hanya merasa. 🌱</p>
       </div>
 
       <!-- CARD 4: Wishes grid kecil -->
@@ -835,19 +839,19 @@
       <div class="scatter-card card-closing">
         <div class="card-deco">🌸</div>
         <p>Terima kasih sudah jadi bagian dari cerita di fase hidup ini. Semoga langkah kamu ke depan selalu <span class="hl">lebih ringan, lebih yakin, dan lebih damai.</span></p>
-        <p style="margin-top:12px;">Nikmati hari spesialmu, semoga penuh senyum dan momen yang menyenangkan. 🎉</p>
+        <p style="margin-top:12px;">Nikmati hari spesialmu — semoga penuh senyum dan momen yang menyenangkan. 🎉</p>
       </div>
 
       <!-- CARD 6: Emoji balloon corner -->
       <div class="scatter-card card-balloons">
-        <div class="balloon-bunch">🎈🎉🎊🎈🥳🎁</div>
+        <div class="balloon-bunch">🎈🎉<br>🎊🥳<br>🌸💜</div>
       </div>
 
     </div>
 
     <div class="footer-msg">
       Selamat ulang tahun yang ke-24, Lya! 🎉<br>
-      Kamu luar biasa. Dunia beruntung punya kamu. 💜
+      Semoga langkahmu ke depan selalu lebih ringan dan lebih damai. 💜
     </div>
   </div>
 
